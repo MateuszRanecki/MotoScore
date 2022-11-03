@@ -20,12 +20,6 @@ namespace MotoScore.Hubs
             }
             
         }
-        public async Task RefreshContenenders() {
-            foreach (var id in UserList)
-            {
-                await Clients.Client(id).SendAsync("SendContRequest");
-            }
-        }
 
     }
 }

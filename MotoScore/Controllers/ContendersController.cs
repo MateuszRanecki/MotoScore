@@ -42,37 +42,6 @@ namespace MotoScore.Controllers
             return contender;
         }
 
-        // PUT: api/Contenders/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutContender(Guid id, Contender contender)
-        //{
-        //    if (id != contender.Id)
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //    _context.Entry(contender).State = EntityState.Modified;
-
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!ContenderExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
-
-        //    return NoContent();
-        //}
-
         [HttpPut("{id}")]
         public async Task<IActionResult> PutContender(Guid id, Contender OldOne)
         {
